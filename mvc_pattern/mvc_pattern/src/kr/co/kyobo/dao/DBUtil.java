@@ -21,7 +21,7 @@ public class DBUtil {
 			Context	initContext = new InitialContext();
 			
 			db = (DataSource)initContext
-					.lookup("java:/comp/env/jdbc/confluence");
+					.lookup("java:/comp/env/jdbc/TestDB");
 		} catch (NamingException e) {
 			System.out.println("Lookup Error!!");
 		}

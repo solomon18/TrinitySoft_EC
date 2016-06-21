@@ -26,24 +26,24 @@
 <body>
 
 <header>
-	<jsp:include page="/banner.html"></jsp:include>
+	<jsp:include page="/banner.html"/>
 </header>
 
 <nav>
-	<jsp:include page="/menu.jsp"></jsp:include>
+	<jsp:include page="/menu.jsp"/>
 </nav>
 
 <section>
 <c:if test="${empty param.content}">
-		<jsp:include page="login.html"></jsp:include>
+		<jsp:include page="login.html"/>
 	</c:if>
 	<c:if test="${not empty param.content}">
-		<jsp:include page="${param.content}"></jsp:include>
+		<jsp:include page="${param.content}"/>
 	</c:if>
 </section>
 
 <footer>
-	<jsp:include page="/copyright.html"></jsp:include>
+	<jsp:include page="/copyright.html"/>
 </footer>
 
 </body>
