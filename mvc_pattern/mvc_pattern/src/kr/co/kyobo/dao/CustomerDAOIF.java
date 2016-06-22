@@ -17,6 +17,7 @@ public interface CustomerDAOIF {
 		                           throws RecordNotFoundException;
 	public abstract ArrayList<Customer> getAllCustomer();
 	public abstract boolean loginCheck(String userId, String password) throws Exception;
+	public abstract boolean loginCheck(String userId) throws Exception;
 }
 
 

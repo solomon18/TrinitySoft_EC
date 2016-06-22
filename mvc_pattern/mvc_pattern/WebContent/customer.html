@@ -11,13 +11,13 @@
 	#customer_wrap{width:99%; padding-top:2%;}	
 	.customer_table{width:40%; margin:0 auto;}	
  </style>
- 
+ <script src="member.js"></script>
 </head>
 
 <body>
 <div id="customer_wrap">
 <h2 style="text-align:center; padding-bottom:20px; color : #111111;">회원가입</h2>
-<form action="customer?action=save" method="post">
+<form action="customer?action=save" method="post" name="joinfrm">
 	<table class="table table-bordered customer_table" border="1">
 		<colgroup>
 			<col width="20%"/>
@@ -27,6 +27,7 @@
 		     <td style="background:#f2f2f2; text-align:center;">아이디</td>
 		     <td>
 		     	<input type="text" class = "form-control" name="userId"/>
+		     	<input type="button" value = "중복 체크" onclick="idCheck()"/>
 		     </td>
 		</tr>
 		<tr>

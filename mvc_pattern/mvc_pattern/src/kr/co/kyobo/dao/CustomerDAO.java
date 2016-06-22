@@ -228,6 +228,30 @@ public class CustomerDAO implements CustomerDAOIF {
 			
 		return flag;
 	}
+	
+	@Override
+	public boolean loginCheck(String userId) throws Exception{
+		boolean flag=false;
+		Connection conn=null;
+		Statement stmt=null;
+	//	PreparedStatement stmt=null;
+		ResultSet result=null;
+		String sql="SELECT user_id FROM customer WHERE user_id='"+userId+"'";
+	//	String sql="SELECT user_id FROM customer  WHERE user_id=? AND password=?";
+			conn=db.getConnection();
+			stmt=conn.createStatement();
+			result= stmt.executeQuery(sql);
+	/*		stmt=conn.prepareStatement(sql);
+			stmt.setString(1, userId);
+			stmt.setString(2, password);
+			
+			result=stmt.executeQuery();
+	*/		
+			if(result.next()) flag=true;
+			
+			
+		return flag;
+	}
 
 }
 
