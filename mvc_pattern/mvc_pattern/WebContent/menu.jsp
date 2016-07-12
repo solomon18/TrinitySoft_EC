@@ -12,6 +12,11 @@ $(document).ready(function(){
     $(".dropdown-toggle").dropdown();
 });
 
+function redirect(value){ 
+	form.site.value=value;  
+	document.form.submit(); 
+	} 
+
 </script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -31,6 +36,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<form action = "redirect.jsp" name = "form">
 <nav class="navbar navbar-default" >
 	<div class="container-fluid" >
     <div class="navbar-header">
@@ -54,7 +60,7 @@ $(document).ready(function(){
 
       
        <li class = "dropdown">
-		  <a class = "dropdown-toggle" data-toggle = "dropdown" href="#" style="color:#ffffff; font-size:22px";>제품소개
+		  <a class = "dropdown-toggle" data-toggle = "dropdown" href="#" style="color:#ffffff; font-size:22px";>제품소개??
 			<span class = "caret"></span></a>
 			<ul class = "dropdown-menu" style = "font-size : 15px";>
 				<li><a href="company?action=solution&number=1">웹스레이</a></li>
@@ -93,23 +99,30 @@ $(document).ready(function(){
 				        </li>
 				    </c:otherwise>
 			    </c:choose>
-			    
+			    <input type = "hidden" name = "site">
 					  <li>
-							<a href="http://cafe.naver.com/sec" target="_blank"><img src="images/lnb_menu01.gif" alt=""
+					  <!--<input type = "hidden" name = "naver" value = "http://cafe.naver.com/sec">-->
+							<a onclick="redirect('http://cafe.naver.com/sec')" target="_blank"><img src="images/lnb_menu01.gif" alt=""
 							 onmouseover="this.src='images/lnb_menu01_ov.gif'"
 							   onmouseout="this.src='images/lnb_menu01.gif'"/></a>
-					  </li>
+					  </li> 
+					  
+					  <!--<input type = "hidden" name = "facebook" value = "www.facebook.com/trinitysoft">-->
 					  <li>
-							<a href="https://www.facebook.com/trinitysoft" target="_blank"><img src="images/lnb_menu03.gif" alt="íì´ì¤ë¶"
+							<a onclick="redirect('https://www.facebook.com/trinitysoft')" target="_blank"><img src="images/lnb_menu03.gif"
 							onmouseover="this.src='images/lnb_menu03_ov.gif'"
 							   onmouseout="this.src='images/lnb_menu03.gif'"/></a>
 					  </li>
-        <!-- <li><a href="#" style="color:#ffffff";><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        -->
-	        
+					  <li class="soft_hover">
+							  <a onclick="redirect('http://www.trinitysoft.co.kr')" target="_blank" style="color:#ffffff; font-size:16px;">
+							  <span class="glyphicon glyphicon-user"></span> TrinitySoft
+							  </a>
+					  </li>
+       				
 		</ul>
 
   </div>
   </nav>
+ </form>
 </body>
 </html>

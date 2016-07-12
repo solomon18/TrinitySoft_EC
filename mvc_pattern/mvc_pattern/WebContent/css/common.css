@@ -1,12 +1,7 @@
-@charset "utf-8";
-
-/*****************************************************************/
-/* ê³µí†µ */
-/*****************************************************************/
 html, body { height:100%; border:0 none; }
 table { text-align: left; border:0 none; }
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,button { font-size:15px; font-Family:"ë‹ì›€","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; color:#454545; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,button { font-size:15px; font-Family:"µ¸¿ò","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; color:#454545; }
 body,div,form,fieldset,button { margin:0;padding:0; }
 img,fieldset{ border:0 none; }
 
@@ -23,7 +18,7 @@ input, select, textarea {
 }
 
 /*****************************************************************/
-/* ë¡¤ì˜¤ë²„ */
+/* ·Ñ¿À¹ö */
 /*****************************************************************/
 a.rollover img { border-width:0px; display:inline; }
 a.rollover img.over { display:none; }
@@ -38,15 +33,15 @@ a, area, { behavior:expression(this.hideFocus=true); }
 a:active, a:focus, area:active, area:focus { outline:none; }
 
 /*****************************************************************/
-/* ë§í¬ */
+/* ¸µÅ© */
 /*****************************************************************/
-a:link {font-size:16px; color:#333333; font-Family:"ë‹ì›€","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
-a:visited {font-size:16px; color:#333333; font-Family:"ë‹ì›€","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
-a:active {font-size:16px; color:#333333; font-Family:"ë‹ì›€","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
-a:hover {font-size:16px; color:#333333; font-Family:"ë‹ì›€","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:underline;}
+a:link {font-size:16px; color:#333333; font-Family:"µ¸¿ò","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
+a:visited {font-size:16px; color:#333333; font-Family:"µ¸¿ò","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
+a:active {font-size:16px; color:#333333; font-Family:"µ¸¿ò","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:none;}
+a:hover {font-size:16px; color:#333333; font-Family:"µ¸¿ò","Dotum","AppleGothic","Albatross","arial","helvetica","sans-serif"; text-decoration:underline;}
 
 /*****************************************************************/
-/* ì—…ë¡œë“œ íŒŒì¼ ë¦¬ìŠ¤íŠ¸ */
+/* ¾÷·Îµå ÆÄÀÏ ¸®½ºÆ® */
 /*****************************************************************/
 #file_btn { height:25px; }
 #file_list { margin:0 0 0 0; }
@@ -64,3 +59,10 @@ a:hover {font-size:16px; color:#333333; font-Family:"ë‹ì›€","Dotum","AppleGothi
 /* swfuplod */
 .swfupload {vertical-align: middle;}
 .login_form01 .input{width:170px; height:22px; }
+/*hover*/
+.soft_hover a:hover{color:#19c1e5 !important;}
+
+/*·Î±×ÀÎ*/
+.admin_all{width:490px; margin:0 auto; padding:60px;}
+.admin_all form{border:1px solid #dcdcdc; padding:30px 20px; border-radius:6px; width:391px; margin-top:20px; background:#f7f5f5;}
+.login_2 input{vertical-align: middle; color:#fff; height: 61px; margin-top: -33px; width: 88px; margin-left: 5px; background:#b60912; border:1px solid #900a11; border-radius:2px;}

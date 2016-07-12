@@ -9,7 +9,7 @@
 <body>
 <center>
 	<h3> <%=request.getAttribute("message") %></h3><br/><br/>
-	<a href="customer?action=home">로그인 페이지로 이동</a>
+	<a href="index.jsp/customer?action=home">로그인 페이지로 이동</a>
 </center>
 </body>
 </html> 
